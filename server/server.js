@@ -11,7 +11,9 @@ var app = express();
 
 app.use(bodyParser.json());
 
+var port = process.env.PORT || 3000;
 
+console.log(port);
 
 
 app.post('/todos',(req,res)=>{
